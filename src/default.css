@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #ed6a5a;
+  --primary-color-darker: #c8594a;
+  --font-color: #292f36;
+  --tertiary-color: #d6d1b1;
+  --bg-color-secondary: #c7efcf;
+  --bg-color: #eef5db;
+}
+nav,
+footer > p {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Monserrat", sans-serif;
+}
+
+h2 {
+  font-family: "Monserrat", sans-serif;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+}
+body {
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  max-width: 1000px;
+  width: 80%;
+}
+a:any-link {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--primary-color-darker);
+}
+
+img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+nav a {
+  margin-left: 15px;
+}
+
+
+/* Mobile breakpoint */
+@media (max-width: 600px) {
+  footer::after {
+    color: green;
+    content: "You are likely using a phone!";
+  }
+}
+
+/* Small screen PCs */
+@media (min-width: 601px) and (max-width: 1000px) {
+  footer::after {
+    color: orangered;
+    content: "You are likely using a small-screened laptop (or a big phone!)";
+  }
+}
+
+/* Large screen PCs */
+@media (min-width: 1001px) {
+  footer::after {
+    color: red;
+    content: "You are likely using a wide-screened PC.";
+  }
+}
