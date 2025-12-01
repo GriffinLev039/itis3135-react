@@ -17,6 +17,10 @@ function Header({setCurrentPage}) {
             event.preventDefault();
             setCurrentPage("Contract");
         }}>Contract</a>
+         <a href="#" onClick={(event)=> {
+            event.preventDefault();
+            setCurrentPage("Introductions");
+        }}>Introductions</a>
       </nav>
     </>
   );
